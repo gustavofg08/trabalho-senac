@@ -4,61 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>171 entregas e vendas</title>
-    <link rel="icon" type="image/png" href="https://i.imgur.com/W4wnwLD.png" title="Se não funcionar não sei pq não foi (só não foi no meu pc)">
+    <link rel="icon" type="image/png" href="https://i.imgur.com/W4wnwLD.png">
     <link rel="stylesheet" href="css/style.css">
     <style>
-    body {
-      background-color: rgb(92, 4, 92);
-    color: yellow;
-}
-.comprar2 {
-    text-align: center;
-}
-.CLTdown {
-text-align: bottom;
-}
-.texto A{
-    width: 20%;
-    margin: 0 auto;  
-}
-
+        body {
+            background-color: rgb(92, 4, 92);
+            color: yellow;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .container img, .container button {
+            margin: 10px;
+        }
+        .wrapper {
+            display: flex;
+            align-items: center;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 </head>
 <body>
     <h1>Bem vindo ao 171 Entregas</h1>
-    <div class="blink"><img src="https://i.imgur.com/W4wnwLD.png"
-    width="150"
-    height="150" title="Se não funcionar não sei pq não foi (só não foi no meu pc)"></div>
+    <div class="blink">
+        <img src="https://i.imgur.com/W4wnwLD.png" width="150" height="150">
+    </div>
     <h2>Aqui você encontra tudo legalmente</h2>
     <div>
-        <img src="https://i.imgur.com/vJ59Xam.jpeg"
-    width="600"
-    height="400" title="Se não funcionar não sei pq não foi (só não foi no meu pc)"></div>
+        <img src="https://i.imgur.com/vJ59Xam.jpeg" width="600" height="400">
+    </div>
     <h2>LEMBRE-SE NÃO GARANTIMOS A ENTREGA</h2>
-    <p>caso esteja tendo erros aperte</p>
-    <button type="reset">Recarregar</button>
+    <p>caso esteja tendo erros aperte a tecla F5, caso não resolva tente outro navegador</p> 
     <!--remember to make reset button-->
-</div>
-
-<div class="CLTdown"><p>aqui alguns produtos</p>
-    
-    <img src="https://i.imgur.com/WUQmsDG.png"
-    width="200"
-    height="200" title="Se não funcionar não sei pq não foi (só não foi no meu pc)">
-    <button>Comprar CLT assinada falsa R$700</button>
-    
-    <!--remember to make images side by side-->    
-    <img src="https://i.imgur.com/ywM0kbb.jpeg" 
-        width="200"
-        height="200"> <button>Comprar Atestado falso R$400</button>
-      
-<!--terminar de colocar os itens-->
-<p>por hora é apenas estes produtos, se desejar ver mais espere até atualizarmos a lista de produtos
-    <h4><img src="https://i.imgur.com/DTRhEIp.jpeg"
-        width="75"
-        height="75" title="Se não funcionar não sei pq não foi (só não foi no meu pc)">
-<!--<script src="src/main.js"></script>-->
-Desenvolvido por Super Online Team</h4>
-<!--<textarea name="enter text" id="" cols="30" rows="10"></textarea>-->
+    <div class="container">
+        <div class="image-container">
+            <img src="https://i.imgur.com/ywM0kbb.jpeg" width="200" height="200">
+            <figcaption class="description">Atestado falso: R$400,00</figcaption>
+            <button style="background-color: yellow;">Comprar</button>
+        </div>
+        <div class="image-container">
+            <img src="https://i.imgur.com/WUQmsDG.png" width="200" height="200">
+            <figcaption class="description">CLT assinada falsa: R$700,00</figcaption>
+            <button style="background-color: yellow;">Comprar</button>
+        </div>
+        <div class="image-container">
+            <img src="https://i.imgur.com/7d6ITEv.jpeg" width="200" height="200">
+            <figcaption class="description">Boletim falso R$150</figcaption>
+        <button style="background-color: yellow;">Comprar</button>
+        </div>
+        <div class="image-container">
+            <img src="https://i.imgur.com/AEgZeLw.jpeg" width="300" height="200">
+            <figcaption class="description">Dinheiro falso (valor correspondente)</figcaption>
+            <button style="background-color: yellow;">Comprar</button>
+         </div>
+    </div>
+    <div>
+        <div class="container">
+            <div class="icon-cart">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                  </svg>
+                  <a href="171/Carrinho de compras.html">A</a>
+            </div>
+        </div>
+    </div>
+    <!--terminar de colocar os itens-->
+    <p>por hora é apenas estes produtos, se desejar ver mais espere até atualizarmos a lista de produtos</p>
+    <h4><img src="https://i.imgur.com/DTRhEIp.jpeg" width="75" height="75"> Desenvolvido por Super Online Team</h4>
+    <!--<script src="src/main.js"></script>-->
 </body>
 </html>
