@@ -1,80 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>171 entregas e vendas</title>
+    <title>171 Entregas</title>
     <link rel="icon" type="image/png" href="https://i.imgur.com/W4wnwLD.png">
-    <link rel="stylesheet" type="text/css" href="https://github.com/gustavofg08/trabalho-senac/blob/main/style.css">
     <style>
-        body {
+         body {
             background-color: rgb(92, 4, 92);
             color: yellow;
+            max-width: 1020px;
+            display: block;
         }
-        .container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .container img, .container button {
-            margin: 10px;
-        }
-        .wrapper {
-            display: flex;
-            align-items: center;
-        }
-        .image-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        .blink {
+   animation: blink 3.5s infinite;
+}
+    @keyframes blink {
+      0% {
+         opacity: 1;
+      }
+      50% {
+         color: rgb(92, 4, 92);
+         opacity: 0;
+         
+      }
+      51% {
+         opacity: 0;
+         
+      }
+      100% {
+         opacity: 1;
+         
+      }
+    }
+
+    @media screen and (max-width: 1020px) {
+       .container {
+        flex-direction: column;
+       }
+    }
+    #imagem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     </style>
 </head>
 <body>
     <h1>Bem vindo ao 171 Entregas</h1>
-    <div class="blink">
-        <img src="https://i.imgur.com/W4wnwLD.png" width="150" height="150">
-    </div>
+    <img class="blink" src="https://i.imgur.com/W4wnwLD.png" width="150" height="150">
     <h2>Aqui você encontra tudo legalmente</h2>
-    <div>
-        <img src="https://i.imgur.com/vJ59Xam.jpeg" width="600" height="400">
-    </div>
-    <h2>LEMBRE-SE NÃO GARANTIMOS A ENTREGA</h2>
-    <p>caso esteja tendo erros aperte a tecla F5, caso não resolva tente outro navegador</p> 
-    <!--remember to make reset button-->
-    <div class="container">
-        <div class="image-container">
-            <img src="https://i.imgur.com/ywM0kbb.jpeg" width="200" height="200">
-            <figcaption class="description">Atestado falso: R$400,00</figcaption>
-            <button style="background-color: yellow;">Comprar</button>
-        </div>
-        <div class="image-container">
-            <img src="https://i.imgur.com/WUQmsDG.png" width="200" height="200">
-            <figcaption class="description">CLT assinada falsa: R$700,00</figcaption>
-            <button style="background-color: yellow;">Comprar</button>
-        </div>
-        <div class="image-container">
-            <img src="https://i.imgur.com/7d6ITEv.jpeg" width="200" height="200">
-            <figcaption class="description">Boletim falso R$150</figcaption>
-        <button style="background-color: yellow;">Comprar</button>
-        </div>
-        <div class="image-container">
-            <img src="https://i.imgur.com/AEgZeLw.jpeg" width="300" height="200">
-            <figcaption class="description">Dinheiro falso R$50 por nota</figcaption>
-            <button style="background-color: yellow;">Comprar</button>
-         </div>
-    </div>
-    <div>
-        <div class="container">
-            <div class="icon-cart">
-               <img src="https://i.imgur.com/PzYcuxD.png" width="55" height="55">
-               <button style="background-color: yellow; color: black;"><a href="//gustavofg08.github.io/trabalhosenacparte2/">Carrinho de compras</a></button>
-            </div>
-        </div>
-    </div>
-    <!--terminar de colocar os itens-->
-    <p>por hora é apenas estes produtos, se desejar ver mais espere até atualizarmos a lista de produtos</p>
-    <h4><img src="https://i.imgur.com/DTRhEIp.jpeg" width="75" height="75"> Desenvolvido por Super Online Team</h4>
-    <!--<script src="src/main.js"></script>-->
+    <img class="container" src="https://i.imgur.com/vJ59Xam.jpeg" width="600" height="400">
+    <h1>LEMBRE-SE, NÃO GARANTIMOS A ENTREGA</h1>
+
 </body>
 </html>
